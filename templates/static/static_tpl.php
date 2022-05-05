@@ -76,7 +76,7 @@ $seoGT = $d->rawQueryOne("select * from #_seopage where type = 'gioi-thieu' limi
         <?php foreach ($linh_vuc_kd as $q => $ad) { ?>
             <div class="item-thumb" style="width: 100%; position: relative; padding-left: 5px; padding-right: 5px;">
                 <div class="img-thumb">
-                    <img src="<?= THUMBS ?>/504x672x1/<?= UPLOAD_NEWS_L . $ad['photo'] ?>" alt="<?= $ad['mota' . $lang] ?>" />
+                    <img src="<?= THUMBS ?>/504x672x1/<?= UPLOAD_NEWS_L . $ad['photo'] ?>" alt="<?= $ad['ten' . $lang] ?>" />
                 </div>
                 <div class="absolute-bottom pd-5 w-100">
                     <h5 style="color: white; text-transform: uppercase; text-align: center;"><?= $ad['mota' . $lang] ?></h5>
@@ -85,6 +85,56 @@ $seoGT = $d->rawQueryOne("select * from #_seopage where type = 'gioi-thieu' limi
         <?php } ?>
     </div>
 <?php } ?>
+
+<?php if (!empty($thanh_tuu)) { ?>
+    <div class="box_thanhtuu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-thumb">
+                        <img src="<?= THUMBS ?>/504x672x1/<?= UPLOAD_NEWS_L . $thanh_tuu['photo'] ?>" alt="<?= $thanh_tuu['ten' . $lang] ?>" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="heading-nested-about my-3 text-dark">
+                        <?= (isset($thanh_tuu['ten' . $lang]) && $thanh_tuu['ten' . $lang] != '') ? $thanh_tuu['ten' . $lang] : '' ?>
+                    </h2>
+                    <div class="content-main w-clear pt-4 pb-4"><?= (isset($thanh_tuu['noidung' . $lang]) && $thanh_tuu['noidung' . $lang] != '') ? htmlspecialchars_decode($thanh_tuu['noidung' . $lang]) : '' ?></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<?php } ?>
+
+
+<div class="bg-red">
+    <div class="container">
+        <div class="row" style="justify-content: center !important;">
+            <div class="col-md-10">
+                <h3 class="heading-small mt-5">CÔNG TY THÀNH VIÊN</h3>
+            </div>
+        </div>
+
+        <div class="about_member">
+            <div class="item-thanhvien">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>CÔNG TY CP ĐẦU TƯ KD ĐỊA ỐC DV TM DU LỊCH TÂN HẢI</h5>
+                        <div class="lead"></div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="img-thumbcrop img-thumbcrop-3by2">
+                            <img src="https://daiphuc.com.vn/uploads/phoi-canh-toa-nha-DP.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!-- <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <defs>

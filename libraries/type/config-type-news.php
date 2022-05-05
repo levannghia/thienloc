@@ -61,7 +61,7 @@
     $config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
 
 
-    /* linh vuv kinh doanh */
+    /* linh vuc kinh doanh */
     $nametype = "linh-vuc-kinh-doanh";
     $config['news'][$nametype]['title_main'] = "Lĩnh vực kinh doanh";
     // $config['news'][$nametype]['check'] = array('noibat'=> 'Nổi bật');
@@ -81,7 +81,6 @@
     $config['news'][$nametype]['height'] = 1410;
     $config['news'][$nametype]['thumb'] = '100x100x1';
     $config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
-
 
      
      
