@@ -1,0 +1,8 @@
+54.147.108.125()--query--tables(delete from table_user_online where time < 1644521039) (02:33:59 11/02/2022)
+34.86.35.26()--query--tables(delete from table_user_online where time < 1644534392) (06:16:32 11/02/2022)
+34.96.130.20()--query--tables(delete from table_user_online where time < 1644535674) (06:37:54 11/02/2022)
+27.65.142.197()--query--tables(delete from table_user_online where time < 1644540834) (08:03:54 11/02/2022)
+34.96.130.6()--query--tables(delete from table_user_online where time < 1644552885) (11:24:45 11/02/2022)
+34.77.162.4()--query--tables(delete from table_user_online where time < 1644557380) (12:39:40 11/02/2022)
+112.213.82.102()--query--tables(delete from table_user_online where time < 1644560702) (13:35:02 11/02/2022)
+34.96.130.12()--query--tables(delete from table_user_online where time < 1644583588) (19:56:28 11/02/2022)
