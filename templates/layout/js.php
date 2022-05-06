@@ -116,6 +116,27 @@ echo $js->getJs();
             }, ],
         });
 
+        $(".member-slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            lazyLoad: "ondemand",
+            autoplay: true,
+            speed: 1000,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: false,
+            responsive: [{
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false,
+                },
+            }, ],
+        });
+
         $(".about-linh-vuc").slick({
             slidesToShow: 3,
             dots: false,

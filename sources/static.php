@@ -13,6 +13,7 @@
 	$lv_kd = $d->rawQueryOne("select id, type, ten$lang, noidung$lang, photo, ngaytao, ngaysua, options from #_static where type = ? and hienthi > 0 limit 0,1",array('linh-vuc-kd'));
 
 	$linh_vuc_kd = $d->rawQuery("select ten$lang, mota$lang, ngaytao, id, photo from #_news where type = ? and hienthi > 0 order by stt,id desc",array('linh-vuc-kinh-doanh'));
+	$cty_thanh_vien = $d->rawQuery("select ten$lang, mota$lang, ngaytao, id, photo from #_news where type = ? and hienthi > 0 order by stt,id desc",array('cong-ty-thanh-vien'));
 
 	$thanh_tuu = $d->rawQueryOne("select ten$lang, mota$lang, noidung$lang, ngaytao, id, photo from #_static where type = ? and hienthi > 0 limit 0,1",array('thanh-tuu'));
 

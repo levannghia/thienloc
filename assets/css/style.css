@@ -1323,12 +1323,13 @@ footer .footer-bottom img {
   padding-top: 16px;
   padding-bottom: 16px;
   line-height: 40px;
+  color: #F2D874;
 }
 .heading-small.text-center:after {
   content: '';
   width: 72px;
   height: 5px;
-  background-color: #f22613;
+  background-color: #F2D874;
   display: block;
   margin: 16px auto 0;
 }
@@ -1533,7 +1534,7 @@ footer .footer-bottom img {
   background-color: #f22613 !important;
   color: #fff !important;
   position: relative;
-  margin-bottom: 7.5rem;
+  /* margin-bottom: 7.5rem; */
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -1624,7 +1625,7 @@ footer .footer-bottom img {
   bottom: -47px;
 }
 
-.slick-dots {
+/* .slick-dots {
   bottom: 0;
 }
 .slick-dots {
@@ -1660,5 +1661,5 @@ footer .footer-bottom img {
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
-}
+} */
 /* end thanh tuu */

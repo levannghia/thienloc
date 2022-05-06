@@ -79,7 +79,7 @@ $seoGT = $d->rawQueryOne("select * from #_seopage where type = 'gioi-thieu' limi
                     <img src="<?= THUMBS ?>/504x672x1/<?= UPLOAD_NEWS_L . $ad['photo'] ?>" alt="<?= $ad['ten' . $lang] ?>" />
                 </div>
                 <div class="absolute-bottom pd-5 w-100">
-                    <h5 style="color: white; text-transform: uppercase; text-align: center;"><?= $ad['mota' . $lang] ?></h5>
+                    <h5 style="color: white; text-transform: uppercase; text-align: center;"><?= $ad['ten' . $lang] ?></h5>
                 </div>
             </div>
         <?php } ?>
@@ -117,21 +117,27 @@ $seoGT = $d->rawQueryOne("select * from #_seopage where type = 'gioi-thieu' limi
         </div>
 
         <div class="about_member">
-            <div class="item-thanhvien">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5>CÔNG TY CP ĐẦU TƯ KD ĐỊA ỐC DV TM DU LỊCH TÂN HẢI</h5>
-                        <div class="lead"></div>
-                    </div>
+            <div class="member-slider">
+                <?php foreach ($cty_thanh_vien as $key => $value) { ?>
+                <div class="item-thanhvien">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 style="margin-bottom: 20px;"><?= $value["ten".$lang] ?></h5>
+                            <div class="lead">
+                             <?= htmlspecialchars_decode($value['mota' . $lang]) ?>
+                            </div>
+                        </div>
 
-                    <div class="col-md-6">
-                        <div class="img-thumbcrop img-thumbcrop-3by2">
-                            <img src="https://daiphuc.com.vn/uploads/phoi-canh-toa-nha-DP.jpg">
+                        <div class="col-md-6">
+                            <div class="img-thumbcrop img-thumbcrop-3by2">
+                                <img src="<?= THUMBS ?>/583x390x1/<?= UPLOAD_NEWS_L . $value['photo'] ?>" alt="<?= $value['ten' . $lang] ?>" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            <?php } ?>
 
+            </div>
         </div>
     </div>
 </div>

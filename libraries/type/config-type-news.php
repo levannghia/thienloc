@@ -82,6 +82,28 @@
     $config['news'][$nametype]['thumb'] = '100x100x1';
     $config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
 
+    /* CÔng ty thành viên */
+    $nametype = "cong-ty-thanh-vien";
+    $config['news'][$nametype]['title_main'] = "Công ty thành viên";
+    // $config['news'][$nametype]['check'] = array('noibat'=> 'Nổi bật');
+    $config['news'][$nametype]['dropdown'] = false;
+    $config['news'][$nametype]['list'] = false;
+    $config['news'][$nametype]['view'] = true;
+    $config['news'][$nametype]['slug'] = true;
+    $config['news'][$nametype]['copy'] = true;
+    $config['news'][$nametype]['bando'] = false;
+    $config['news'][$nametype]['images'] = true;
+    $config['news'][$nametype]['show_images'] = true;
+    $config['news'][$nametype]['mota'] = true;
+    $config['news'][$nametype]['mota_cke'] = true;
+    $config['news'][$nametype]['noidung'] = false;
+    $config['news'][$nametype]['noidung_cke'] = false;
+    $config['news'][$nametype]['seo'] = false;
+    $config['news'][$nametype]['width'] = 800;
+    $config['news'][$nametype]['height'] = 600;
+    $config['news'][$nametype]['thumb'] = '100x100x1';
+    $config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif|.JPG|.PNG|.JPEG|.Png|.GIF';
+
      
      
     /* tin tức */
